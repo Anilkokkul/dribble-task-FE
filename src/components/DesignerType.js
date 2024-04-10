@@ -138,7 +138,9 @@ function OptionCard({ image, title, checked, onChange, id, text }) {
         {title}
       </h1>
       {text && (
-        <p className=" text-center mx-auto text-xs text-slate-400">{text}</p>
+        <p className=" text-center mx-auto text-xs md:text-base text-slate-400">
+          {text}
+        </p>
       )}
       <div className="text-center mt-3">
         <div className="inline-block">
