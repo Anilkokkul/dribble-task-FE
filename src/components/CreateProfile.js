@@ -38,7 +38,7 @@ function CreateProfile() {
       const formData = new FormData();
       formData.append("image", file);
       axios
-        .post("http://localhost:5000/upload", formData)
+        .post("https://dribble-api.onrender.com/upload", formData)
         .then((response) => {
           // console.log(response);
           const url = response.data.imageUrl;

@@ -31,7 +31,7 @@ function DesignerType() {
       localStorage.setItem("userDetails", JSON.stringify(userDetails));
       // console.log(userDetails);
       axios
-        .post("http://localhost:5000/create-account", userDetails)
+        .post("https://dribble-api.onrender.com/create-account", userDetails)
         .then((response) => {
           console.log(response);
           alert(`Account created successfully!`);
