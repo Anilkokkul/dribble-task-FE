@@ -134,7 +134,7 @@ function OptionCard({ image, title, checked, onChange, id, text }) {
         alt="img"
         className={` ${text ? "md:-mt-20 -mt-10" : ""} w-4/5 mx-auto`}
       />
-      <h1 className="md:font-extrabold font-bold text-center w-4/5 mx-auto mt-3 text-xs md:h-14">
+      <h1 className="md:font-extrabold font-bold text-center w-4/5 mx-auto mt-3 text-xs md:text-lg md:h-14">
         {title}
       </h1>
       {text && (
