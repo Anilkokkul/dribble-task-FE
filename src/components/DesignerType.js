@@ -63,7 +63,7 @@ function DesignerType() {
           Select the option that best describes you. Don't worry, you can
           explore other option later.
         </p>
-        <div className="flex justify-center mt-16 gap-8">
+        <div className="flex justify-center mt-16 md:gap-8 gap-2 p-3">
           <OptionCard
             image={image}
             title="I'm a Designer looking to share my work"
@@ -125,19 +125,21 @@ export default DesignerType;
 function OptionCard({ image, title, checked, onChange, id, text }) {
   return (
     <div
-      className={`w-96 h-80 p-4 border rounded-xl ${
+      className={`lg:w-96 lg:h-80 w-1/3 p-2 border rounded-xl ${
         checked ? "border border-4 border-[#ea4b8b]" : ""
       }`}
     >
       <img
         src={image}
         alt="img"
-        className={` ${text ? "-mt-20" : ""} w-4/5 mx-auto`}
+        className={` ${text ? "md:-mt-20 -mt-10" : ""} w-4/5 mx-auto`}
       />
-      <h1 className="font-extrabold text-center w-4/5 mx-auto mt-3 h-14">
+      <h1 className="md:font-extrabold font-bold text-center w-4/5 mx-auto mt-3 text-xs md:h-14">
         {title}
       </h1>
-      {text && <p className=" text-center mx-auto text-slate-400">{text}</p>}
+      {text && (
+        <p className=" text-center mx-auto text-xs text-slate-400">{text}</p>
+      )}
       <div className="text-center mt-3">
         <div className="inline-block">
           <input

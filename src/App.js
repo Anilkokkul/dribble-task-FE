@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App h-screen md:flex ">
-      <div className="bg-[#f2d184] w-1/3 md:h-screen"></div>
+      <div className="bg-[#f2d184] hidden md:block w-1/3 md:h-screen"></div>
       <div className=" w-full">
         <p className=" my-8 text-right mr-5">Already a Member ? Sign in</p>
         <div className=" w-4/5 lg:w-[40%] mx-auto">

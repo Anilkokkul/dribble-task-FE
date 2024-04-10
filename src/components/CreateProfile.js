@@ -58,7 +58,7 @@ function CreateProfile() {
 
   return (
     <div>
-      <div className=" px-5 md:w-1/2 lg:w-[40%] mx-auto mt-20">
+      <div className=" px-12 md:px-0 md:w-2/3 lg:1/2 lg:w-[40%] mx-auto mt-20">
         <h1 className=" text-4xl font-bold">
           Welcome! Let's create your profile
         </h1>
@@ -69,7 +69,7 @@ function CreateProfile() {
           <h1>Add an avatar</h1>
           <div className=" flex justify-start gap-8 mt-5">
             <div
-              className={`w-40 h-40 rounded-full ${
+              className={`w-24 h-24 md:w-40 md:h-40 rounded-full ${
                 imageSrc ? "border" : "border-4 border-dashed"
               } flex items-center justify-center`}
             >
