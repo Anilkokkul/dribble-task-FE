@@ -50,6 +50,7 @@ function App() {
                   className=" bg-[#f3f3f3] border-0 block rounded-md h-10 w-full mt-2 px-3"
                   placeholder="enter your name"
                   value={userDetails.name}
+                  required
                   onChange={(e) => handleInputChange(e)}
                 />
               </div>
@@ -64,6 +65,7 @@ function App() {
                   className=" bg-[#f3f3f3] border-0 block rounded-md h-10 w-full mt-2 px-3"
                   placeholder="enter your username"
                   value={userDetails.userName}
+                  required
                   onChange={(e) => handleInputChange(e)}
                 />
               </div>
@@ -79,6 +81,7 @@ function App() {
                 className="mt-2 block rounded-md h-10 w-full bg-[#f3f3f3] px-3"
                 placeholder="enter your email"
                 value={userDetails.email}
+                required
                 onChange={(e) => handleInputChange(e)}
               />
             </div>
@@ -93,6 +96,7 @@ function App() {
                 className="mt-2 block rounded-md h-10 w-full bg-[#f3f3f3] px-3"
                 placeholder="6+ characters"
                 value={userDetails.password}
+                required
                 pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"
                 title="At least 6 characters and at least 1 letter and 1 capital letter required"
                 onChange={(e) => handleInputChange(e)}
